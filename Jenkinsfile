@@ -19,10 +19,10 @@ pipeline {
         }
         stage('Stage4') {
             steps {
-                echo 'Privet my frend ${username}'
+                echo "Privet my frend ${username}"
             }
             steps {
-                echo 'How are you ${username}'
+                echo "How are you ${username}"
             }
         }
     }
