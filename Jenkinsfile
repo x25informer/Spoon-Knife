@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Stage2') {
             steps {
-                echo "My second Pipe"
+                echo "NEW CHANGE MY JENKINS FILE"
             }
         }
         stage('Stage3') {
             steps {
-                echo "My 3 Pipe"
+                echo "#############NEW CHANGE###############"
             }
         }
         stage('Stage4') {
