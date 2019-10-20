@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    def username='Zaur'
     stages {
         stage('Stage1') {
             steps {
@@ -8,17 +9,20 @@ pipeline {
         }
         stage('Stage2') {
             steps {
-                echo "NEW CHANGE MY JENKINS FILE"
+                echo "My second Pipe"
             }
         }
         stage('Stage3') {
             steps {
-                echo "#############NEW CHANGE###############"
+                echo "My 3 Pipe"
             }
         }
         stage('Stage4') {
             steps {
-                echo "end my first Pipe"
+                echo 'Privet my frend ${username}'
+            }
+            steps {
+                echo 'How are you ${username}'
             }
         }
     }
