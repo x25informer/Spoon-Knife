@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    def username = 'Zaur'
+    def username = "Zaur"
     stages {
         stage('Stage1') {
             steps {
@@ -19,7 +19,10 @@ pipeline {
         }
         stage('Stage4') {
             steps {
-                echo "Privet my frend $username"
+                echo "Privet my frend ${username}"
+            }
+            steps {
+                echo "How are you ${username}"
             }
         }
     }
