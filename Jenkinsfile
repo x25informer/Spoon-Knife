@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    def username='Zaur'
+    def username = 'Zaur'
     stages {
         stage('Stage1') {
             steps {
