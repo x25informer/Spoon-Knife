@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Stage2') {
             steps {
-                echo "My build id: ${env.$BUILD_ID}" 
+                echo "My build id: ${env.$BUILD_ID} and my build number ${env.$BUILD_NUMBER}" 
             }
         }
     }
